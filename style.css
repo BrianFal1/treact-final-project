@@ -66,7 +66,18 @@ nav {
     padding-bottom: 4px;
 }
 
+.nav__logo--img {
+    width: 40px;
+    height: 40px;
+}
 
+.nav__logo--text {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    margin-left: 12px;
+    color: #243e63;
+}
 .btn__menu {
     display: none;
     background: transparent;
@@ -122,6 +133,22 @@ nav {
     border: none;
 }
 
+.nav__link {
+    text-decoration: none;
+    margin-left: 32px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.nav__link--primary {
+    color: white;
+    background-color: #6415ff;
+    padding: 12px 32px;
+    border-radius: 9999px;
+    font-weight: 700;
+}
+
 .menu--open .modal {
     visibility: visible;
     opacity: 1;
@@ -144,6 +171,9 @@ HEADER / ABOUT US ↓
 
 .header__description {
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header__description--title {
@@ -297,9 +327,7 @@ FEATURES ↓
     align-items: center;
 }
 
-.feature {
-    width: 100%;
-}
+ 
 /* 
 
 QUALITY WORK ↓
@@ -354,21 +382,6 @@ QUALITY WORK ↓
     align-items: center;
 }
 
-.quality__description {
-    width: 100%;
-    padding-right: 0;
-    text-align: center;
-}
-
-.quality__img--wrapper {
-    width: 100%;
-    margin-bottom: 48px;
-}
-
-.quality__title,
-.quality__para {
-    text-align: center;
-}
 
 /* 
 
@@ -772,7 +785,7 @@ MOBILE RESPONSIVENESS ↓
     #pricing .row {
         margin-top: 40px;
     }
-    @media(max-width: 768px) {
+   
     #quality .row,
     #values .row {
         flex-direction: column-reverse;
@@ -866,16 +879,15 @@ MOBILE RESPONSIVENESS ↓
 .value:first-child {
     margin-right: 0;
 }
-}
-.plans {
-    flex-direction: column;
-    align-items: center;
+  .plans {
+   flex-direction: column;
+   align-items: center;
 }
 
 .plan {
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 32px;
+   width: 100%;
+   max-width: 400px;
+   margin-bottom: 32px;
 }
 .start__container {
     flex-direction: column;
@@ -907,7 +919,8 @@ MOBILE RESPONSIVENESS ↓
 .footer__bottom h3 {
     margin-bottom: 16px;
 }
-}
+
+} /* END OF 768px MEDIA QUERY */
 
 @media(max-width: 640px) {
     .container {
